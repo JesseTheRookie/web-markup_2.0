@@ -1,0 +1,4 @@
+student name: Jesse van Evert
+student number: 625868
+student class: INF2A
+URL student GitHub reposository: https://github.com/JesseTheRookie/web-markup_2.0.git
