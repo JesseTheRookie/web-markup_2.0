@@ -1,0 +1,53 @@
+/*this stylesheet is only used in the haarlem page*/
+.haarlemHeader{
+    background-image: url("../img/haarlem.jpg");
+}
+header h2{
+    margin: 115px 0 0 5%;
+}
+header p{
+    margin-left: 5%;
+}
+.info{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 100%;
+    background-color: #f5f5f5;
+}
+section article{
+    height: 400px;
+}
+.jopenkerk .background-image{
+    background-image: url("../img/brewer.jpg");
+}
+.teylersmuseum .background-image{
+    background-image: url("../img/teyler.jpg");
+}
+.sintBavoKerk .background-image{
+    background-image: url("../img/church.jpg");
+}
+.info h2, .info p{
+    margin: 20px 0 0 5%;
+}
+@media only screen and (max-width: 1480px) {
+    .info{
+      grid-template-columns: 100%;
+    }
+    }
+@media only screen and (max-width: 850px) {
+header .right h1{
+    font-size: 20pt;
+}
+.info article h2{
+    font-size: 30pt;
+}
+.info article p{
+    font-size: 15pt;
+    line-height: 22pt;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .haarlemHeader{
+        grid-template-columns: 100%;
+    }
+}

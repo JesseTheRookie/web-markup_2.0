@@ -1,0 +1,140 @@
+/*this stylesheet is only used in the index page*/
+p{
+  font-size: 15pt;
+  font-family: Arial;
+}
+body{
+  position: relative;
+}
+.mainHeader .left{
+  background-image: url("../img/boxer.jpg");
+  }
+.overviewArticle{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.overviewArticle h2{
+  font-size: 80pt;
+  margin: 90px 5% 0 0;
+  float: right;
+  color: white;
+}
+.overviewArticle p{
+  margin: 50px 5% 0 5%;
+}
+.overviewArticle section:nth-child(1){
+  background-color: black;
+}
+.overviewArticle section:nth-child(2){
+  background-color: #f5f5f5;
+}
+.infoContainer{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.overview{
+  width: 100%;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+}
+.overview article{
+  height: 400px;;
+  color: white;
+  position: relative;
+  display: block;
+}
+.overview article h2{
+  margin: 10px 0 0 4%;
+  font-size: 40pt;
+}
+.overview article p{
+  margin: 25px 0 0 5%;
+  color:white;
+}
+.overview article div.background-image{
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+#sportsection article:nth-child(1) div.background-image{
+  background-image: url("../img/boxer.jpg");
+}
+#sportsection article:nth-child(2) div.background-image{
+  background-image: url("../img/wholesomeFighters.jpg");
+}
+#sportsection article:nth-child(3) div.background-image{
+  background-image: url("../img/football.jpg");
+}
+#sportsection article:nth-child(4) div.background-image{
+  background-image: url("../img/tennis.jpg");
+}
+#sportsection article:nth-child(5) div.background-image{
+  background-image: url("../img/wingchun.jpg");
+}
+#sportsection article:nth-child(6) div.background-image{
+  background-image: url("../img/volleybal.jpg");
+}
+#sportsection article:nth-child(7) div.background-image{
+  background-image: url("../img/badminton.jpg");
+}
+#sportsection article:nth-child(8) div.background-image{
+  background-image: url("../img/basketbal.jpg");
+}
+#sportsection article:nth-child(9) div.background-image{
+  background-image: url("../img/rugby.jpg");
+}
+#sportsection article:nth-child(10) div.background-image{
+  background-image: url("../img/hockey.jpg");
+}
+article{
+  width: 100%;
+  height: 300px;
+}
+.overlay{
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  z-index: 1;
+}
+@media only screen and (max-width: 1535px) {
+  .overview{
+    grid-template-columns: 50% 50%;
+  }
+}
+@media only screen and (max-width: 935px) {
+  .mainHeader{
+    display: block;
+    height: 400px;
+  }
+  .mainHeader .left{
+    width: 0;
+    position: absolute;
+  }
+  .mainHeader .right{
+    width: 100%;
+  }
+  .overviewArticle section h2{
+    font-size: 40pt;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .overview{
+    grid-template-columns: 100%;
+  }
+  .overviewArticle section p{
+    font-size: 18pt;
+    line-height: 20pt; 
+  }
+}
+@media only screen and (max-width: 470px) {
+  header .right h1{
+    font-size: 20pt;
+  }
+  .mainHeader{
+    height: 250px;
+  }
+}
