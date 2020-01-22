@@ -143,7 +143,7 @@
     </section>
 
     <section class="teylersmuseum info">
-        <article class="background-image"><img src="img/teyler1.jpg" alt="brouwerij" class="responsiveImg"></article>
+        <article class="background-image"><img src="img/teyler1.jpg" alt="museum" class="responsiveImg"></article>
         <article>
             <h2>Teylers museum</h2>
             <p>Teylers Museum is het eerste en oudste museum van Nederland in Haarlem. Kom, en verwonder je over kunst, wetenschap, geschiedenis.</p>
@@ -152,7 +152,7 @@
     </section>
 
     <section class="sintBavoKerk info">
-        <article class="background-image"><img src="img/church.jpg" alt="brouwerij" class="responsiveImg"></article>
+        <article class="background-image"><img src="img/church.jpg" alt="kerk" class="responsiveImg"></article>
         <article>
             <h2>Sint Bavo kerk</h2>
             <p>De Grote of Sint-Bavokerk is de op 1 na grootste kerk in de Nederlandse stad Haarlem, gelegen aan de Grote Markt. Hij is gewijd aan Sint-Bavo. De middeleeuwse kruiskerk die midden in het oude centrum van de stad staat is opgetrokken in de gotische bouwstijl.</p>
@@ -171,33 +171,20 @@
 
     <section class="contactContainer">
         <form action="http://witan.nl/inholland/testform.php">
-        <section class="row">
-            <article>
-            <label for="fname">Name</label>
-            </article>
-            <article>
-            <input type="text" id="name" name="name" placeholder="John Doe">
-            </article>
-        </section>
-        <section class="row">
-            <article>
-            <label for="lname">Email</label>
-            </article>
-            <article>
-            <input type="text" id="email" name="email" placeholder="John@outlook.com">
-            </article>
-        </section>
-        <section class="row">
-            <article>
-            <label for="subject">Subject</label>
-            </article>
-            <article>
-            <textarea id="message" name="message" placeholder="Wow, this website is really great 10/10."></textarea>
-            </article>
-        </section>
-        <section class="row">
+            <legend>Contact gegevens:</legend>
+            <fieldset>
+                <label for="fname">Name</label>
+                <input type="text" id="name" name="name" placeholder="John Doe">
+            </fieldset>
+            <fieldset>
+                <label for="lname">Email</label>
+                <input type="text" id="email" name="email" placeholder="John@outlook.com">
+             </fieldset>
+            <fieldset>
+                <label for="subject">Subject</label>
+                <textarea id="message" name="message" placeholder="Wow, this website is really great 10/10."></textarea>
+            </fieldset>
             <button type="submit">submit</button>
-        </section>
         </form>
         </section>
     

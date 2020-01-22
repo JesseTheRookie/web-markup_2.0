@@ -12,9 +12,8 @@ label {
     display: inline-block;
     }
 
-.row button{
-    float: right;
-    margin-right: 6%;
+form button{
+    margin: 0;
 }
 
 input[type=submit]:hover {
@@ -29,13 +28,13 @@ input[type=submit]:hover {
     padding: 20px;
 }
 
-.row article:nth-child(1) {
+fieldset label{
     float: left;
     width: 25%;
     margin-top: 6px;
 }
 
-.row article:nth-child(2) {
+fieldset input {
     float: left;
     width: 75%;
     margin-top: 6px;
