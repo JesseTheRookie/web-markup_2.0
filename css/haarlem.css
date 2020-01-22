@@ -17,22 +17,29 @@ header p{
 .info article{
     height: 400px;
 }
-.jopenkerk .background-image{
-    background-image: url("../img/brewer.jpg");
+
+.jopenkerk article:nth-child(1){
+    background-color: black;
 }
-.teylersmuseum .background-image{
-    background-image: url("../img/teyler.jpg");
+.teylersmuseum article:nth-child(1){
+    background-color: black;
 }
-.sintBavoKerk .background-image{
-    background-image: url("../img/church.jpg");
+.sintBavoKerk article:nth-child(1){
+    background-color: black;
+}
+.responsiveImg{
+    max-width: 100%;
 }
 .info h2, .info p{
     margin: 20px 0 0 5%;
 }
 @media only screen and (max-width: 1480px) {
-    .info{
-      grid-template-columns: 100%;
-    }
+        .info{
+        grid-template-columns: 100%;
+        }
+        .responsiveImg{
+            height: 400px;
+        }
     }
 @media only screen and (max-width: 850px) {
 header .right h1{
