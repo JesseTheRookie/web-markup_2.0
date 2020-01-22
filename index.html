@@ -1,26 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Home</title>
+    <meta name="description" content="Info over Haarlem">
+    <meta name="keywords" content="Haarlem,Sport,Uitgaan">
+    <meta name="author" content="Jesse van Evert">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/button.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/generic.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/haarlem.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/contact.css">
 </head>
 <body>
     <nav>
-        <ul><li><a href="pages/contact.html">Contact</a></li><li><a href="pages/haarlem.html">Verken</a></li><li><a href="index.html#sportsection">Sportscholen</a></li><li>Home</li></ul>
+        <ul><li><a href="index.html#contact">Contact</a></li><li><a href="index.html#haarlem">Verken</a></li><li><a href="index.html#sportsection">Sportscholen</a></li><li><a href="index.html#home">Home</a></li></ul>
     </nav>
 
-    <header class="mainHeader">
+    <header id="home" class="mainHeader">
         <section class="left background-image"></section>
-        <section class="right">
+        <aside class="right">
             <h1>Op deze pagina vindt u informatie over sport en uitgaans gelegenheden in Haarlem. Voor vragen kunt u op de onderstaande knop klikken.</h1>
             <a href="pages/contact.html" class="button">Contact</a>
-        </section>
+        </aside>
     </header>
 
     <article class="sportArticle overviewArticle">
@@ -31,99 +36,168 @@
          <p>Zie hieronder verscheidende sport gelegenheden in Haarlem.</p>
         </section>
     </article>
+
     <!-- Begin of sports overview -->
     <section id="sportsection" class="overview">
         <article>
-            <p class="background-image"></p>
-            <p class="overlay">
+            <section class="background-image"></section>
+            <section class="overlay">
                 <h2>Boksen</h2>
-                <a href="https://www.kenamju.nl/boksen" class="button">Bekijk</a>
+                <button onclick="window.location.href = 'https://www.kenamju.nl/boksen';">Bekijk</button>
                 <p>Wordt een boks kampioen.</p>
-            </p>
+            </section>
         </article>
         <article>
-            <p class="background-image"></p>
-            <p class="overlay">
+            <section class="background-image"></section>
+            <section class="overlay">
                 <h2>Taekwondo</h2>
-                <a href="https://www.taekwon.nl/taekwondo/" class="button">Bekijk</a>
+                <button onclick="window.location.href = 'https://www.taekwon.nl/taekwondo;'">Bekijk</button>
                 <p>Leer deze oude koreanse vechtsport.</p>
-            </p>
+            </section>
         </article>
         <article class="background-image">
-            <p class="background-image"></p>
-            <p class="overlay">
+            <section class="background-image"></section>
+            <section class="overlay">
                 <h2>Voetbal</h2>
-                <a href="https://voetbalinhaarlem.nl/" class="button">Bekijk</a>
+                <button onclick="window.location.href = 'https://voetbalinhaarlem.nl/;'">Bekijk</button>
                 <p>Wordt onderdeel van een gezelig voetbalteam.</p>
-            </p>
+            </section>
         </article>
         <article class="background-image">
-            <p class="background-image"></p>
-            <p class="overlay">
+            <section class="background-image"></section>
+            <section class="overlay">
                 <h2>Tennis</h2>
-                <a href="https://www.hltc.nl/" class="button">Bekijk</a>
+                <button onclick="window.location.href = 'https://www.hltc.nl/'">Bekijk</button>
                 <p>Kom lekker tennissen.</p>
-            </p>
+            </section>
         </article>
     <article class="background-image">
-            <p class="background-image"></p>
-            <p class="overlay">
+            <section class="background-image"></section>
+            <section class="overlay">
                 <h2>Wing chun</h2>
-                <a href="https://wudae.nl/" class="button">Bekijk</a>
+                <button onclick="window.location.href = 'https://wudae.nl/'">Bekijk</button>
                 <p>Leer de traditionele vechtsport wing chun.</p>
-            </p>
+            </section>
         </article>
     <article>
-            <p class="background-image"></p>
-            <p class="overlay">
+            <section class="background-image"></section>
+            <section class="overlay">
                 <h2>Volleybal</h2>
-                <a href="https://www.vcspaarnestad.nl/" class="button">Bekijk</a>
+                <button onclick="window.location.href = 'https://www.vcspaarnestad.nl/'">Bekijk</button>
                 <p>Als je zin hebt om ballen over een net te slaan is dit de plek.</p>
-            </p>
+            </section>
         </article>
     <article>
-        <p class="background-image"></p>
-        <p class="overlay">
+        <section class="background-image"></section>
+        <section class="overlay">
             <h2>Badminton</h2>
-            <a href="http://www.duinwijck.com/" class="button">Bekijk</a>
+            <button onclick="window.location.href = 'http://www.duinwijck.com/'">Bekijk</button>
             <p>Dit is de leukste badminton club van Haarlem.</p>
-        </p>
+        </section>
     </article>
     <article class="background-image">
-        <p class="background-image"></p>
-        <p class="overlay">
+        <section class="background-image"></section>
+        <section class="overlay">
             <h2>Basketbal</h2>
-            <a href="http://ogbasketball.nl/" class="button">Bekijk</a>
+            <button onclick="window.location.href = 'http://ogbasketball.nl/'">Bekijk</button>
             <p>Beter leren basketballen dan LeBron James doe je hier.</p>
-        </p>
+        </section>
     </article>
     <article class="background-image">
-        <p class="background-image"></p>
-        <p class="overlay">
+        <section class="background-image"></section>
+        <section class="overlay">
             <h2>Rugby</h2>
-            <a href="https://rugbyclubhaarlem.nl/" class="button">Bekijk</a>
+            <button onclick="window.location.href = 'https://rugbyclubhaarlem.nl/'">Bekijk</button>
             <p>De meest mannelijke sport kan je ook in Haarlem beoefenen.</p>
-        </p>
+        </section>
     </article>
     <article class="background-image">
-            <p class="background-image"></p>
-            <p class="overlay">
+            <section class="background-image"></section>
+            <section class="overlay">
                 <h2>Hockey</h2>
-                <a href="https://www.hchaarlem.nl/site/Default.asp" class="button">Bekijk</a>
+                <button onclick="window.location.href = 'https://www.hchaarlem.nl/site/Default.asp'">Bekijk</button>
                 <p>Kom jij onze hockeyclub versterken?</p>
-            </p>
+            </section>
         </article>
     </section>
+
     <!-- End of sports overview -->
     <article class="haarlemArticle overviewArticle">
         <section>
          <h2>Verken.</h2>
         </section>
         <section>
-         <p>Klik op de knop hieronder om over de omgeving van Haarlem te leren.</p>
-         <a href="pages/haarlem.html" class="button">Bekijk</a>
+         <p>Nu Amsterdam volledig is overgenomen door toeristen is Haarlem misschien wel dé uitgaansstad van Nederland. Er zijn genoeg leuke dingen om te doen; kijk maar hier beneden.</p>
         </section>
     </article>
+    
+    <section id="haarlem" class="jopenkerk info">
+        <article class="background-image"></article>
+        <article>
+            <h2>Jopenkerk</h2>
+            <p>Jopen heeft de eeuwenoude Haarlemse brouwtraditie in ere hersteld. Een voormalig kerk in het levendige centrum van Haarlem is omgetoverd tot een moderne stadsbrouwerij, grand café en restaurant.</p>
+            <button onclick="window.location.href = 'https://www.jopenkerk.nl/haarlem/'">Bekijk</button>
+        </article>
+    </section>
+
+    <section class="teylersmuseum info">
+        <article class="background-image"></article>
+        <article>
+            <h2>Teylers museum</h2>
+            <p>Teylers Museum is het eerste en oudste museum van Nederland in Haarlem. Kom, en verwonder je over kunst, wetenschap, geschiedenis.</p>
+            <button onclick="window.location.href = 'https://www.teylersmuseum.nl/nl'">Bekijk</button>
+        </article>
+    </section>
+
+    <section class="sintBavoKerk info">
+        <article class="background-image"></article>
+        <article>
+            <h2>Sint Bavo kerk</h2>
+            <p>De Grote of Sint-Bavokerk is de op 1 na grootste kerk in de Nederlandse stad Haarlem, gelegen aan de Grote Markt. Hij is gewijd aan Sint-Bavo. De middeleeuwse kruiskerk die midden in het oude centrum van de stad staat is opgetrokken in de gotische bouwstijl.</p>
+            <button onclick="window.location.href = 'https://www.bavo.nl/'">Bekijk</button>
+        </article>
+    </section>
+
+    <article id="contact" class="contactArticle overviewArticle">
+        <section>
+         <h2>Contact.</h2>
+        </section>
+        <section>
+         <p>Als je nog vragen of opmerkingen hebt kan je gerust contact met ons opnemen.</p>
+        </section>
+    </article>
+
+    <section class="contactContainer">
+        <form action="http://witan.nl/inholland/testform.php">
+        <section class="row">
+            <article>
+            <label for="fname">Name</label>
+            </article>
+            <article>
+            <input type="text" id="name" name="name" placeholder="John Doe">
+            </article>
+        </section>
+        <section class="row">
+            <article>
+            <label for="lname">Email</label>
+            </article>
+            <article>
+            <input type="text" id="email" name="email" placeholder="John@outlook.com">
+            </article>
+        </section>
+        <section class="row">
+            <article>
+            <label for="subject">Subject</label>
+            </article>
+            <article>
+            <textarea id="message" name="message" placeholder="Wow, this website is really great 10/10."></textarea>
+            </article>
+        </section>
+        <section class="row">
+            <button type="submit">submit</button>
+        </section>
+        </form>
+        </section>
     
     <footer class="pageFooter">
         <p>&copy; Copyright 2019 Jesse van Evert</p>

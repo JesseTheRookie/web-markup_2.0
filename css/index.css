@@ -52,44 +52,44 @@ body{
   margin: 25px 0 0 5%;
   color:white;
 }
-.overview article div.background-image{
+.overview article section.background-image{
   width: 100%;
   height: 100%;
   opacity: 0.5;
 }
-#sportsection article:nth-child(1) div.background-image{
+#sportsection article:nth-child(1) section.background-image{
   background-image: url("../img/boxer.jpg");
 }
-#sportsection article:nth-child(2) div.background-image{
+#sportsection article:nth-child(2) section.background-image{
   background-image: url("../img/wholesomeFighters.jpg");
 }
-#sportsection article:nth-child(3) div.background-image{
+#sportsection article:nth-child(3) section.background-image{
   background-image: url("../img/football.jpg");
 }
-#sportsection article:nth-child(4) div.background-image{
+#sportsection article:nth-child(4) section.background-image{
   background-image: url("../img/tennis.jpg");
 }
-#sportsection article:nth-child(5) div.background-image{
+#sportsection article:nth-child(5) section.background-image{
   background-image: url("../img/wingchun.jpg");
 }
-#sportsection article:nth-child(6) div.background-image{
+#sportsection article:nth-child(6) section.background-image{
   background-image: url("../img/volleybal.jpg");
 }
-#sportsection article:nth-child(7) div.background-image{
+#sportsection article:nth-child(7) section.background-image{
   background-image: url("../img/badminton.jpg");
 }
-#sportsection article:nth-child(8) div.background-image{
+#sportsection article:nth-child(8) section.background-image{
   background-image: url("../img/basketbal.jpg");
 }
-#sportsection article:nth-child(9) div.background-image{
+#sportsection article:nth-child(9) section.background-image{
   background-image: url("../img/rugby.jpg");
 }
-#sportsection article:nth-child(10) div.background-image{
+#sportsection article:nth-child(10) section.background-image{
   background-image: url("../img/hockey.jpg");
 }
-article{
-  width: 100%;
+article.overviewArticle{
   height: 300px;
+  width: 100%;
 }
 .overlay{
   height: 100%;
