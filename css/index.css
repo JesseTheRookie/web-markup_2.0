@@ -44,10 +44,11 @@ body{
   grid-template-columns: 50% 50%;
 }
 .overviewArticle h2{
-  font-size: 80pt;
+  font-size: 63pt;
   margin: 90px 5% 0 0;
   float: right;
   color: #ffffff;
+  padding-bottom: 60px;
 }
 .overviewArticle p{
   margin: 50px 5% 0 5%;
@@ -235,6 +236,6 @@ p{
     font-size: 20pt;
   }
   .mainHeader{
-    height: 330px;
+    height: 390px;
   }
 }
