@@ -1,14 +1,13 @@
 /*this stylesheet is only used in the index page*/
 p{
   font-size: 15pt;
-  font-family: Arial;
 }
 body{
   position: relative;
 }
 .mainHeader .left{
-  background-image: url("../img/boxer.jpg");
-  }
+  background-image: url("../img/boxer.png");
+}
 .overviewArticle{
   display: grid;
   grid-template-columns: 50% 50%;
@@ -17,7 +16,7 @@ body{
   font-size: 80pt;
   margin: 90px 5% 0 0;
   float: right;
-  color: white;
+  color: #ffffff;
 }
 .overviewArticle p{
   margin: 50px 5% 0 5%;
@@ -26,7 +25,10 @@ body{
   background-color: black;
 }
 .overviewArticle section:nth-child(2){
-  background-color: #f5f5f5;
+  background-color: #ffffff;
+}
+.overviewArticle p{
+  color: #aaaaaa;
 }
 .infoContainer{
   display: grid;
@@ -34,13 +36,13 @@ body{
 }
 .overview{
   width: 100%;
-  background-color: black;
+  background-color: #000000;
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
 }
 .overview article{
   height: 400px;;
-  color: white;
+  color: #ffffff;
   position: relative;
   display: block;
 }
@@ -50,7 +52,7 @@ body{
 }
 .overview article p{
   margin: 25px 0 0 5%;
-  color:white;
+  color:#ffffff;
 }
 .overview article section.background-image{
   width: 100%;
@@ -58,34 +60,34 @@ body{
   opacity: 0.5;
 }
 #sportsection article:nth-child(1) section.background-image{
-  background-image: url("../img/boxer.jpg");
+  background-image: url("../img/boxer.png");
 }
 #sportsection article:nth-child(2) section.background-image{
-  background-image: url("../img/wholesomeFighters.jpg");
+  background-image: url("../img/wholesomeFighters.png");
 }
 #sportsection article:nth-child(3) section.background-image{
-  background-image: url("../img/football.jpg");
+  background-image: url("../img/football.png");
 }
 #sportsection article:nth-child(4) section.background-image{
-  background-image: url("../img/tennis.jpg");
+  background-image: url("../img/tennis.png");
 }
 #sportsection article:nth-child(5) section.background-image{
-  background-image: url("../img/wingchun.jpg");
+  background-image: url("../img/wingchun.png");
 }
 #sportsection article:nth-child(6) section.background-image{
-  background-image: url("../img/volleybal.jpg");
+  background-image: url("../img/volleybal.png");
 }
 #sportsection article:nth-child(7) section.background-image{
-  background-image: url("../img/badminton.jpg");
+  background-image: url("../img/badminton.png");
 }
 #sportsection article:nth-child(8) section.background-image{
-  background-image: url("../img/basketbal.jpg");
+  background-image: url("../img/basketbal.png");
 }
 #sportsection article:nth-child(9) section.background-image{
-  background-image: url("../img/rugby.jpg");
+  background-image: url("../img/rugby.png");
 }
 #sportsection article:nth-child(10) section.background-image{
-  background-image: url("../img/hockey.jpg");
+  background-image: url("../img/hockey.png");
 }
 article.overviewArticle{
   height: 300px;

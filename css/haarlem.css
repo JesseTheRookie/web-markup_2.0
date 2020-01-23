@@ -17,7 +17,6 @@ header p{
 .info article{
     height: 400px;
 }
-
 .jopenkerk article:nth-child(1){
     background-color: black;
 }
@@ -32,6 +31,9 @@ header p{
 }
 .info h2, .info p{
     margin: 20px 0 0 5%;
+}
+.info p{
+    color: #444444;
 }
 @media only screen and (max-width: 1480px) {
         .info{
