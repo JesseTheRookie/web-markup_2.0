@@ -12,14 +12,19 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/button.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/generic.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/haarlem.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/contact.css">
     <link rel="icon" href="img/favicon/favicon-16x16.png" type="image/gif" sizes="16x16"> 
 </head>
 <body>
 
     <nav>
-        <ul><li><a href="index.html#contact">Contact</a></li><li><a href="index.html#haarlem">Verken</a></li><li><a href="index.html#sportsection">Sportscholen</a></li><li><a href="index.html#home">Home</a></li></ul>
+        <ul>
+            <li><a href="index.html#referal">Referal</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="index.html#haarlem">Verken</a></li>
+            <li><a href="index.html#sportsection">Sportscholen</a></li>
+            <li><a href="index.html#home">Home</a></li>
+        </ul>
     </nav>
 
     <header id="home" class="mainHeader">
@@ -29,6 +34,21 @@
             <button onclick="window.location.href = 'index.html#contact';">Contact</button>
         </aside>
     </header>
+
+    <section id="mainsection">
+        <section>
+            <article>
+                <header>
+                    <h2>We houden van Haarlem</h2>
+                </header>
+                <p>Hier bij taekwondo-haarlem zijn wij gek op onze stad. Niet alleen vanwege de diverse sporten die het aanbiedt, 
+                    maar ook vanwege de cultuur, uitgaansplekken en architectuur. Onze missie is om mensen te introduceren tot Haarlem,
+                    en hen te laten zien wat de stad allemaal te bieden heeft. </p>
+                <footer><p>Wij hopen dat u vindt wat u zoekt op deze pagina.</p></footer>
+            </article>
+            <aside><img src="img/haarlem.png" alt="Een luchtfoto van de stad Haarlem" title="haarlem" class="responsiveImg"></aside>
+         </section>
+    </section>
 
     <article class="sportArticle overviewArticle">
         <section>
@@ -134,7 +154,7 @@
     </article>
     
     <section id="haarlem" class="jopenkerk info">
-        <article class=""> <img src="img/brewer.png" alt="brouwerij" class="responsiveImg"></article>
+        <article class=""> <img src="img/brewer.png" alt="Een bierbrouw in de Jopenkerk" title="café" class="responsiveImg"></article>
         <article>
             <h2>Jopenkerk</h2>
             <p>Jopen heeft de eeuwenoude Haarlemse brouwtraditie in ere hersteld. Een voormalig kerk in het levendige centrum van Haarlem is omgetoverd tot een moderne stadsbrouwerij, grand café en restaurant.</p>
@@ -143,7 +163,7 @@
     </section>
 
     <section class="teylersmuseum info">
-        <article class="background-image"><img src="img/teyler1.png" alt="museum" class="responsiveImg"></article>
+        <article class="background-image"><img src="img/teyler1.png" alt="Een plafond in het teylersmuseum" title="museum" class="responsiveImg"></article>
         <article>
             <h2>Teylers museum</h2>
             <p>Teylers Museum is het eerste en oudste museum van Nederland in Haarlem. Kom, en verwonder je over kunst, wetenschap, geschiedenis.</p>
@@ -152,7 +172,7 @@
     </section>
 
     <section class="sintBavoKerk info">
-        <article class="background-image"><img src="img/church.png" alt="kerk" class="responsiveImg"></article>
+        <article class="background-image"><img src="img/church.png" alt="De Sint-Bavokerk in Haarlem" title="kerk" class="responsiveImg"></article>
         <article>
             <h2>Sint Bavo kerk</h2>
             <p>De Grote of Sint-Bavokerk is de op 1 na grootste kerk in de Nederlandse stad Haarlem, gelegen aan de Grote Markt. Hij is gewijd aan Sint-Bavo. De middeleeuwse kruiskerk die midden in het oude centrum van de stad staat is opgetrokken in de gotische bouwstijl.</p>
@@ -168,6 +188,20 @@
          <p>Als je nog vragen of opmerkingen hebt kan je gerust contact met ons opnemen.</p>
         </section>
     </article>
+
+    <section id="referal">
+        <article>
+            <header>
+                <h2>Vechtsport</h2>
+            </header>
+                <p>Ik wist niet zo goed wat ik hier moest neerzetten, maar aangezien in de url taekwondo staat zal ik het over vechtsporten hebben.
+                    Persoonlijk denk ik dat het leren van een vechtsport belangrijk is voor de ontwikkeling van kinderen, niet alleen omdat ze zich leren te verdedigen.
+                    Maar voornamelijk omdat het zelfvertrouwen geeft in het geval van een confrantie, wat er voor zorgt dat hij/zij minder snel aggressief zal reageren
+                    vanwege de vertrouwen in zijn/haar zelfverdedigingscapaciteiten.
+                </p>
+            <footer><p>En uh, hier is een footer; dat moest ofzo.</p></footer>
+        </article>
+    </section>
 
     <section class="contactContainer">
         <form action="http://witan.nl/inholland/testform.php">
@@ -186,7 +220,7 @@
         </form>
         </section>
     
-    <footer class="pageFooter">
+    <footer id="pageFooter">
         <p>&copy; Copyright 2019 Jesse van Evert</p>
     </footer>
 </body>

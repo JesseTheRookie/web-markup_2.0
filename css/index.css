@@ -5,8 +5,39 @@ p{
 body{
   position: relative;
 }
+.mainHeader{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 625px;
+}
+.mainHeader .right{
+  background-color: #f5f5f5;
+}
+.mainHeader .right h1{
+  margin: 125px 5% 0 5%;
+}
+.mainHeader section{
+  height: 100%;
+}
 .mainHeader .left{
   background-image: url("../img/boxer.png");
+}
+#mainsection section{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+#mainsection section aside{
+  background-color: #000000;
+}
+#mainsection section article{
+  padding: 5%;
+}
+#mainsection section article footer{
+  color: #aaaaaa;
+  margin-top: 10px;
+}
+#mainsection section article h2{
+  margin-bottom: 20px;
 }
 .overviewArticle{
   display: grid;
@@ -22,7 +53,7 @@ body{
   margin: 50px 5% 0 5%;
 }
 .overviewArticle section:nth-child(1){
-  background-color: black;
+  background-color: #000000;
 }
 .overviewArticle section:nth-child(2){
   background-color: #ffffff;
@@ -90,7 +121,6 @@ body{
   background-image: url("../img/hockey.png");
 }
 article.overviewArticle{
-  height: 300px;
   width: 100%;
 }
 .overlay{
@@ -102,32 +132,100 @@ article.overviewArticle{
   padding: 0;
   z-index: 1;
 }
+/*this stylesheet is only used in the haarlem page*/
+.haarlemHeader{
+  background-image: url("../img/haarlem.jpg");
+}
+.info header h2{
+  margin: 115px 0 0 5%;
+}
+.info header p{
+  margin-left: 5%;
+}
+.info{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+.info article{
+  height: 400px;
+}
+.jopenkerk article:nth-child(1){
+  background-color: black;
+}
+.teylersmuseum article:nth-child(1){
+  background-color: black;
+}
+.sintBavoKerk article:nth-child(1){
+  background-color: black;
+}
+.responsiveImg{
+  max-width: 100%;
+}
+.info h2, .info p{
+  margin: 20px 0 0 5%;
+}
+.info p{
+  color: #444444;
+}
+#referal article{
+  padding: 5%;
+}
+#referal article footer{
+  color: #aaaaaa;
+  margin-top: 10px;
+}
+@media only screen and (max-width: 1480px) {
+      .info{
+      grid-template-columns: 100%;
+      }
+      .responsiveImg{
+          height: 400px;
+      }
+      #mainsection section{
+        grid-template-columns: 100%;
+    }
+  }
+@media only screen and (max-width: 850px) {
+header .right h1{
+  font-size: 20pt;
+}
+h2{
+  font-size: 30pt;
+}
+p{
+  font-size: 15pt;
+  line-height: 22pt;
+}
+}
+@media only screen and (max-width: 850px) {
+  .haarlemHeader{
+      grid-template-columns: 100%;
+  }
+}
 @media only screen and (max-width: 1535px) {
   .overview{
     grid-template-columns: 50% 50%;
   }
 }
 @media only screen and (max-width: 935px) {
-  .mainHeader{
-    display: block;
-    height: 400px;
-  }
-  .mainHeader .left{
-    width: 0;
-    position: absolute;
-  }
-  .mainHeader .right{
-    width: 100%;
-  }
-  .overviewArticle section h2{
+   h2{
     font-size: 40pt;
+  }
+  .mainHeader{
+    grid-template-columns: 100%;
+    background-color: #000000;
+  }
+  .overviewArticle{
+    grid-template-columns: 100%;
   }
 }
 @media only screen and (max-width: 650px) {
   .overview{
     grid-template-columns: 100%;
   }
-  .overviewArticle section p{
+   p{
     font-size: 18pt;
     line-height: 20pt; 
   }
@@ -137,6 +235,6 @@ article.overviewArticle{
     font-size: 20pt;
   }
   .mainHeader{
-    height: 250px;
+    height: 330px;
   }
 }
