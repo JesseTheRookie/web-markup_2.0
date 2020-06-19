@@ -5,22 +5,53 @@ p{
 body{
   position: relative;
 }
+#sportsection button{
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  margin: 0;
+}
 .mainHeader{
-  display: grid;
-  grid-template-columns: 50% 50%;
-  height: 625px;
+  height: 100vh;
+  text-align: center;
+}
+.mainHeader section video{
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  left: 0;
+}
+.mainHeader section p {
+	color: white;
+	width: 22em;
+	text-shadow: black;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+.mainHeader section .logo{
+  width: 35%;
+  margin-top: 10vh;
+}
+.mainHeader section .arrow{
+  position: absolute;
+  bottom: 0;
+  width: 70px;
+}
+.mainHeader .left{
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
 }
 .mainHeader .right{
   background-color: #f5f5f5;
-}
-.mainHeader .right h1{
-  margin: 125px 5% 0 5%;
+  margin-top: 70vh;
 }
 .mainHeader section{
   height: 100%;
-}
-.mainHeader .left{
-  background-image: url("../img/boxer.png");
+  background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
 }
 #mainsection section{
   display: grid;
@@ -39,28 +70,41 @@ body{
 #mainsection section article h2{
   margin-bottom: 20px;
 }
-.overviewArticle{
-  display: grid;
-  grid-template-columns: 50% 50%;
+#home:hover ~ #homenav{
+  color: #2699fb;
 }
 .overviewArticle h2{
-  font-size: 63pt;
-  margin: 90px 5% 0 0;
-  float: right;
-  color: #ffffff;
-  padding-bottom: 60px;
+  font-size: 42pt;
+  color: black;
 }
-.overviewArticle p{
-  margin: 50px 5% 0 5%;
+.text{
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5px;
+  text-align: center;
+}
+.text p{
+  color: white;
+  width: 26em;
+  text-shadow: black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+}
+nav img {
+  width: 50px;
+  position: absolute;
+  margin: 0;
+  top: 0;
 }
 .overviewArticle section:nth-child(1){
-  background-color: #000000;
+  background-color: #ffffff;
 }
 .overviewArticle section:nth-child(2){
   background-color: #ffffff;
 }
 .overviewArticle p{
-  color: #aaaaaa;
+  color: #000000;
 }
 .infoContainer{
   display: grid;
@@ -77,25 +121,71 @@ body{
   color: #ffffff;
   position: relative;
   display: block;
+  border: 5px white solid;
 }
-.overview article h2{
+.overview article div h2{
   margin: 10px 0 0 4%;
-  font-size: 40pt;
+  font-size: 24pt;
+  color: white;
 }
-.overview article p{
-  margin: 25px 0 0 5%;
+.overview article .overlay p{
+  margin: 0 0 0 5%;
   color:#ffffff;
+  opacity: 0;
+  transition: 500ms;
+  font-size: 18pt;
+}
+.overview article:hover .overlay p{
+  opacity: 1;
+  transition: 500ms;
+}
+.overview article div{
+  transition: 500ms;
+}
+.overview article:hover .overlay{
+  background-color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  transition: 500ms; 
+}
+.overview article:hover button{
+  background-color: #f5f5f5;
+  color: #2699fb;
+  transition: 0.4s;
+}
+.overview article:hover div{
+  background-color: rgba(0, 0, 0, 0.0); 
+  transition: 500ms;
 }
 .overview article section.background-image{
   width: 100%;
   height: 100%;
-  opacity: 0.5;
+}
+.overview .overlay{
+  transition: 500ms;
+}
+article.overviewArticle{
+  width: 100%;
+}
+.overlay{
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  padding: 0;
+  z-index: 1;
+}
+.overlay div{
+  width: 100%;
+  height: 14%;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: auto;
 }
 #sportsection article:nth-child(1) section.background-image{
   background-image: url("../img/boxer.png");
 }
 #sportsection article:nth-child(2) section.background-image{
-  background-image: url("../img/wholesomeFighters.png");
+  background-image: url("../img/handschoenen.jpg");
 }
 #sportsection article:nth-child(3) section.background-image{
   background-image: url("../img/football.png");
@@ -121,18 +211,7 @@ body{
 #sportsection article:nth-child(10) section.background-image{
   background-image: url("../img/hockey.png");
 }
-article.overviewArticle{
-  width: 100%;
-}
-.overlay{
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  padding: 0;
-  z-index: 1;
-}
+
 /*this stylesheet is only used in the haarlem page*/
 .haarlemHeader{
   background-image: url("../img/haarlem.jpg");
@@ -145,12 +224,13 @@ article.overviewArticle{
 }
 .info{
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 40% 60%;
   width: 100%;
-  background-color: #f5f5f5;
+  background-color: white;
 }
 .info article{
-  height: 400px;
+  height: 350px;
+  border: 5px white solid;
 }
 .jopenkerk article:nth-child(1){
   background-color: black;
@@ -161,10 +241,19 @@ article.overviewArticle{
 .sintBavoKerk article:nth-child(1){
   background-color: black;
 }
+#haarlem .background-image{
+  background-image: url("../img/brewer.png");
+}
+#teyler .background-image{
+  background-image: url("../img/teyler1.png");
+}
+#sint .background-image{
+  background-image: url("../img/church.png");
+}
 .responsiveImg{
   max-width: 100%;
 }
-.info h2, .info p{
+.info h2, .info p, .info button{
   margin: 20px 0 0 5%;
 }
 .info p{

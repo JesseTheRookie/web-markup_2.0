@@ -1,3 +1,6 @@
+body{
+    height: 100%;
+}
 @font-face {
     font-family: ubuntu;
     src: url(../fonts/Ubuntu/Ubuntu-Regular.ttf);
@@ -13,11 +16,10 @@ h1{
     font-size: 30pt;
 }
 h2{
-    font-size: 50pt;
+    font-size: 42pt;
 }
 p{
-    font-size: 25pt;
-    line-height: 27pt;
+    font-size: 18pt;
 }
 a{
     text-decoration: none;
@@ -33,17 +35,30 @@ nav{
     height: 65px;
     position: fixed;
     opacity: 1;
-    color:white;
     z-index: 999;
     background-color: #000000;
     top: 0;
+    text-align: center;
 }
 nav ul li{
     margin: 20px 2% 0 0%;
     display: inline-block;
-    float: right;
 }
-
+nav ul li a{
+    color:white;
+    transition: 500ms;
+}
+nav ul li:hover a{
+    transition: 500ms;
+    color: #2699fb;
+    cursor: pointer;
+}
+nav img{
+    width: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 #pageFooter{
     width: 100%;
     color: white;
